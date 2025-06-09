@@ -36,3 +36,51 @@
     transform: rotate(360deg);
   }
 }
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #3b82f6, #9333ea, #ec4899);
+  color: white;
+}
+
+.App-header {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.App-logo {
+  height: 100px;
+  animation: spin-slow 10s linear infinite;
+}
+
+.App-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: #9333ea;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.App-link:hover {
+  background-color: #f3e8ff;
+}
